@@ -1,0 +1,32 @@
+﻿<Window x:Class="WpfApp2.InsertInvoiceWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp2"
+        mc:Ignorable="d"
+        Title="InsertInvoiceWindow" Height="450" Width="800">
+    <StackPanel Margin="20">
+        <!-- Título de la ventana -->
+        <TextBlock Text="Insertar Nueva Factura" FontSize="20" FontWeight="Bold" Margin="0 0 0 20" HorizontalAlignment="Center" Foreground="#333"/>
+
+        <!-- Customer ID -->
+        <TextBlock Text="Customer ID" FontWeight="SemiBold" Margin="5 0"/>
+        <TextBox Name="txtCustomerID" Margin="5" Padding="10" Height="35" BorderBrush="#ccc" BorderThickness="1" Background="White" Width="300"/>
+
+        <!-- Fecha -->
+        <TextBlock Text="Fecha (YYYY-MM-DD)" FontWeight="SemiBold" Margin="5 0"/>
+        <TextBox Name="txtDate" Margin="5" Padding="10" Height="35" BorderBrush="#ccc" BorderThickness="1" Background="White" Width="300"/>
+
+        <!-- Total -->
+        <TextBlock Text="Total" FontWeight="SemiBold" Margin="5 0"/>
+        <TextBox Name="txtTotal" Margin="5" Padding="10" Height="35" BorderBrush="#ccc" BorderThickness="1" Background="White" Width="300"/>
+
+        <!-- Número de Factura -->
+        <TextBlock Text="Número de Factura" FontWeight="SemiBold" Margin="5 0"/>
+        <TextBox Name="txtInvoiceNumber" Margin="5" Padding="10" Height="35" BorderBrush="#ccc" BorderThickness="1" Background="White" Width="300"/>
+
+        <!-- Botón Insertar -->
+        <Button Content="Insertar" Click="btnInsert_Click" Width="150" Height="40" Margin="10" HorizontalAlignment="Center" FontWeight="Bold" BorderThickness="1" Cursor="Hand"/>
+    </StackPanel>
+</Window>
